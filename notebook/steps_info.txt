@@ -1,0 +1,33 @@
+# US-VISA-Approval-Prediction
+
+create git repository--> copy the link in code HTML
+go to folder where you want to create a project folder
+open cmd--> go to cmd-->enter git clone and link in 1st step--> open folder location in antigravity
+create template.py--> python template.py
+create environment--> conda create -p env python=3.8 -y --> conda activate env/
+create requirements.txt-->create setup.py(get on internet)--> pip install -r requirements.txt
+create a jupyter notebook ipynb file 
+create cluster and initiate the connection to load dataset in mongoDB written in mongodb_demo.ipynb file
+in logger/__init__.py write a code to create logs (get from internet)
+in demo.py write code (get from internet)
+in exception.py write a CustomException code
+in utils/main_utils.py write a code to read yaml file, write yaml file, load object, save object, save numpy array data, load numpy array data, drop columns
+perform EDA in EDA_US_visa.ipynb
+perform feature engineering and model training in ipynb file
+
+in constants folder create a file constants.py and write a code to define constants
+MONGODB_URL = mongodb+srv://lokeshz9999:bhishekzope@cluster0.hqmsn3r.mongodb.net/?appName=Cluster0
+in entity/config_entity.py file join the path of all folders created in constants.py
+in entity/artifact_entity.py file, create test and train filepath folder
+create a file in configuration folder named mongo_db_connection.py and write a code to connect to mongoDB
+create new folder data_access and create a file in that folder usvisa_data.py
+in data_access/usvisa_data.py write a code to access data from mongodb also to convert data into dataframe
+in data_ingestion.py write a code to export data from mongodb to csv file and also to split data into train and test set and to initiate data ingestion file
+test the data_ingestion.py file
+
+Data drift with evidently-->
+define constants in constats.py file
+in config_entity.py file connect paths
+same in artifact_entity.py file
+write a code in data_validation.py file
+update data_ingestion.py file and test data_validation.py file
